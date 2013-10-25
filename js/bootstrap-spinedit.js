@@ -75,8 +75,8 @@
             $(x).bind('selectstart click mousedown', function () { return false; });
         });
 
-        template.find('.icon-chevron-plus').mousehold($.proxy(this.increase, this));
-        template.find('.icon-chevron-minus').mousehold($.proxy(this.decrease, this));
+        template.find('.glyphicon.glyphicon-plus').mousehold($.proxy(this.increase, this));
+        template.find('.glyphicon.glyphicon-minus').mousehold($.proxy(this.decrease, this));
         this.element.on('keypress', $.proxy(this._keypress, this));
         this.element.on('blur', $.proxy(this._checkConstraints, this));
     };
@@ -186,8 +186,8 @@
 
     DRPGlobal.template =
 	'<div class="spinedit">' +
-	'<i class="icon-chevron-plus"></i>' +
-	'<i class="icon-chevron-minus"></i>' +
+	'<i class="glyphicon glyphicon-plus"></i>' +
+	'<i class="glyphicon glyphicon-minus"></i>' +
 	'</div>';
 
 }(window.jQuery);
