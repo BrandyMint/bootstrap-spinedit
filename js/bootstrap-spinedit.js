@@ -140,6 +140,10 @@
             if (this.numberOfDecimals > 0 && key == 46) {
                 return;
             }
+            // backspace
+            if (key == 8) {
+                return;
+            }
             // Ensure that it is a number and stop the keypress
             var a = [];
             for (var i = 48; i < 58; i++)
